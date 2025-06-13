@@ -203,6 +203,36 @@ declare
  12  end;
  13  /
 
+11> 5 multiple
+----------------
+declare
+n int;
+i int;
+begin
+n:=&n;
+i:=1;
+while i<=n loop
+dbms_output.put_line(5*i);
+i:=i+1;
+end loop;
+end;
+/
+ 12>3 multiple
+---------------
+declare
+n int;
+i int;
+begin
+n:=&n;
+i:=1;
+while i<=n loop
+dbms_output.put_line(3*i);
+i:=i+1;
+end loop;
+end;
+/
+
+
 
 
 
