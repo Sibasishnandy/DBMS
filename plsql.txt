@@ -250,6 +250,25 @@ dbms_output.put_line(fact);
 end;
 /
 
+14>random generation
+----------------------
+declare
+n int;
+x int;
+i int;
+begin
+n:=&n;
+i:=1;
+while i<=n loop
+x:=dbms_random.value(10,100);
+dbms_output.put_line(x);
+insert into y values(x);
+i:=i+1;
+end loop;
+end;
+/
+
+
 
 
 
