@@ -144,8 +144,8 @@ end if;
 end;
 /
 
-8>3 great
--------------
+8> gretaest among 3
+--------------------
 declare
 a int;
 b int;
@@ -163,6 +163,31 @@ dbms_output.put_line('Greatest is:'|| c);
 end if;
 end;
 /
+
+9>palindrome text check
+-------------------------
+declare
+n varchar2(100);
+i int;
+x varchar2(100);
+o varchar2(100);
+begin
+n:='&n';
+o:=n;
+i:=length(n);
+while i>=1 loop
+x:=x||substr(n,i,1);
+i:=i-1;
+end loop;
+dbms_output.put_line(x);
+if o=x then
+dbms_output.put_line('palindrome text');
+else
+dbms_output.put_line('not palindrome text');
+end if;
+end;
+/
+
 
 
 
